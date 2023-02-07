@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="btn-container">
+            <button class="btn" onclick="openTabs(event, 'info')" id="defaultOpen"><strong>About me</strong></button>
+            <button class="btn" onclick="openTabs(event, 'projects')"><strong>Projects</strong></button>
+            <button class="btn" onclick="openTabs(event, 'contacts')"><strong>Contacts</strong></button>
+        </div>
+
+        <section class="tabs-container">
+            <article class="tabs-wrapper" id="info">
+                <h3 class="info">I'm a frontend dev in apprentice </h3><br>
+                <p class="info">I really like surfing Internet, I have came across many website, and many of
+                                them have fantastic design; sometimes I was like "Hey, what if I make one for
+                                myself" and I get into it just like that. To be honest, I'm not into coding at all,
+                                but the feeling of creating a lot of thing with just some text is just so great, 
+                                and I started to think about the career...  
+                    </p><br>
+                <p class="info">I started learning the basic about 2 years ago. I chose a bootcamp as my starting
+                                point. I then spent a lot of time to get the hold of Javascript because I dind't 
+                                understand the use of it during the bootcamp. After a year of self teaching, I
+                                know this is my career, I started buiding personal project every now and then, 
+                                seek the advice of the experiment developer, I having some pretty decent project
+                                util now.
+                    </p>
+                <p class="info">Now I'm ready for seeking my first full-time role where I can contribute my
+                                skill to have any company or organization to achive their goal
+                    </p>
+            </article>
+            <article class="tabs-wrapper" id="projects">
+                <button class="p-btn">Show description</button>
+
+                <div class="projects-list">
+                    <div class="projects-wrapper">
+                        <div class="header">
+                            <img src="/1.png" alt="picture" >
+                            <div>
+                                <a href=link class="link" target="_blank"><h3>piano</h3></a>
+                                <a href="${item.code}" class="code-link"></a><button class="source-btn">Code</button></a>
+                                <span>use</span>
+                            </div>
+                        </div>
+                        
+                        <p>A pianoo</p>
+                    </div>
+                </div>
+            </article>
+            <article class="tabs-wrapper" id="contacts">
+                <div class="contact-list">
+                    <a href="https://www.reddit.com/u/Velcaer-405?utm medium=android app&utm source=share" target="_blank"><img class="s-icon" src="s-icon/reddit.png" alt="reddit"></a>
+                    <a href="https://www.linkedin.com/in/hoang-do-66b260264/" target="_blank"><img class="s-icon" src="s-icon/linkedln.png" alt="linkedln"></a>
+                    <a href="https://discordapp.com/users/Velcaer#1278" target="_blank"><img class="s-icon" src="s-icon/discord.png" alt="discord"></a>
+                    <a href="https://github.com/Usernamedr101217" target="_blank"><img class="s-icon" src="s-icon/github.png" alt="github"></a>
+                    <a href="mailto:dohoangcaer@gmail.com" target="_blank"><img class="s-icon" src="s-icon/gmail.png" alt="gmail"></a>
+                </div>
+
+                <div class="resume-container">
+                    <img src="arrow.png" style="width: 6em; height: auto;">
+                    <a class="resume" href="https://docs.google.com/document/d/1IbrsJ0KzSIztUmoC7DCg4ezC8WY_vTaa/edit?usp=share_link&ouid=102320774653897753112&rtpof=true&sd=true" download><button>My resume</button></a>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
